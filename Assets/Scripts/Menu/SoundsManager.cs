@@ -7,11 +7,19 @@ using UnityEngine.UI;
 public class SoundsManager : MonoBehaviour
 {
     [SerializeField] AudioMixer _mixer;
-    [SerializeField] AudioSource[] _sources = new AudioSource[2];
+    [SerializeField] AudioSource[] _sources = new AudioSource[2]; //0 = Music, 1 = Fx
 
     float _volumeGeneral = 0.5f;
     float _volumeMusic = 0.5f;
     float _volumeFX = 0.5f;
+    bool _isMusic = true;
+
+    public void ChangeMusicPlayMode(GameObject obj)
+    {
+        _isMusic = !_isMusic;
+        obj.SetActive(_isMusic);
+        _sources[0].gameObject.SetActive(_isMusic);
+    }
 
     public void ChangeVolumeGeneral(Slider slider)
     {
