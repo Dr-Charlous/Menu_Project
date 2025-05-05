@@ -2,15 +2,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using UnityEngine.UI;
-using Unity.VisualScripting;
 
 public class UiActions : MonoBehaviour
 {
     [SerializeField] GameObject _mainWindow;
     [SerializeField] GameObject _mainWindowChild;
     [SerializeField] TMP_Dropdown _drop;
-    [SerializeField] Sprite _spriteDrop;
     [SerializeField] Resolution[] _resolutions;
     [SerializeField] int[] _frameRates;
     [SerializeField] string[] _Graphisms;
