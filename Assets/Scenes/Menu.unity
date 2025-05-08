@@ -6617,6 +6617,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a7f341746ee847499a14d9bc98e37b8, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1371925275}
     - targetCorrespondingSourceObject: {fileID: 8698960442149107148, guid: 0a7f341746ee847499a14d9bc98e37b8, type: 3}
       insertIndex: 0
       addedObject: {fileID: 16620525}
@@ -6629,9 +6632,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4213854595830909173, guid: 0a7f341746ee847499a14d9bc98e37b8, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1419166121}
-    - targetCorrespondingSourceObject: {fileID: 4880632400816908831, guid: 0a7f341746ee847499a14d9bc98e37b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1371925275}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a7f341746ee847499a14d9bc98e37b8, type: 3}
       insertIndex: -1
@@ -10570,7 +10570,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6173572721582479254, guid: 975884a9b0b5a7d48ba567b33e7b64c6, type: 2}
   m_audioClip: {fileID: 8300000, guid: dc32c98033bfb21498194030d0f10316, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -14782,14 +14782,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371925274}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7016743, y: -0.70386213, z: -0.08746826, w: -0.067680664}
-  m_LocalPosition: {x: 0.014578301, y: 0.002434729, z: -0.00027797077}
-  m_LocalScale: {x: 0.0020693105, y: 0.0020693103, z: 0.0020693091}
+  m_LocalRotation: {x: -1, y: -0.0000025981615, z: 0.0000031272327, w: 0.00000023841855}
+  m_LocalPosition: {x: 5.393045, y: 2.434429, z: -0.44852066}
+  m_LocalScale: {x: 0.20693108, y: 0.20693104, z: 0.20693089}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1470871657}
   - {fileID: 1277095536}
-  m_Father: {fileID: 457252565}
+  m_Father: {fileID: 1823439172}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!1 &1380147896
 GameObject:
