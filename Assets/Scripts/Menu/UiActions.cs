@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class UiActions : MonoBehaviour
 {
+    [SerializeField] Animator[] _animators;
     [SerializeField] GameObject _mainWindow;
     [SerializeField] GameObject _mainWindowChild;
     [SerializeField] TMP_Dropdown _drop;
@@ -54,6 +55,14 @@ public class UiActions : MonoBehaviour
         _actualWindow.SetActive(false);
         _actualWindow = obj;
         _actualWindow.SetActive(true);
+    }
+
+    public void AnimTrigger(string value)
+    {
+        for (int i = 0; i < _animators.Length; i++)
+        {
+            _animators[i].SetTrigger(value);
+        }
     }
 
     public void ChangeWindowChild(GameObject obj)
