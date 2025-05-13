@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class UiActions : MonoBehaviour
 {
     [SerializeField] Animator[] _animators;
+    [SerializeField] FadeAction _fadeAction;
     [SerializeField] GameObject _mainWindow;
     [SerializeField] GameObject _mainWindowChild;
     [SerializeField] TMP_Dropdown _drop;
@@ -41,7 +42,7 @@ public class UiActions : MonoBehaviour
     //Main buttons
     public void StartGame(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        _fadeAction.Animator.SetTrigger("FadeOut");
     }
 
     public void QuitGame()
